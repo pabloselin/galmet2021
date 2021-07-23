@@ -1,0 +1,17 @@
+.home-main-expo {
+	text-align: center;
+	margin: 36px 0;
+
+	a.linkprensa {
+		color: #333;
+		display: inline-block;
+		margin: 12px;
+		font-size: 18px;
+		border: 1px solid #ccc;
+		padding: 12px;
+		&:hover {
+			background-color: #f0f0f0;
+		}
+	}
+}
+

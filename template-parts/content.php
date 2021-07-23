@@ -22,8 +22,8 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				galmet_posted_on();
-				galmet_posted_by();
+				//galmet_posted_on();
+				//galmet_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -58,6 +58,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php galmet_entry_footer(); ?>
+		<?php //galmet_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
