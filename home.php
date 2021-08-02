@@ -26,8 +26,8 @@ get_header();
 			      'post_status'=> 'publish'
 			        );
 			  $expos = get_posts($args);
-			  if(has_post_thumbnail($expo->ID)):
-	      		$pthumb = get_post_thumbnail_id($expo->ID);
+			  if(has_post_thumbnail($expos[0]->ID)):
+	      		$pthumb = get_post_thumbnail_id($expos[0]->ID);
 	      		$psrc = wp_get_attachment_image_src($pthumb, 'invitacion');
 	    	  endif;
 			  ?>
