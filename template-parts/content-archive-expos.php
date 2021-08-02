@@ -1,6 +1,7 @@
+<div class="expolist">
 <?php 
 	$args = array(
-		'post_type' => 'post',
+		'post_type' => 'expos',
 		'numberposts' => -1
 	);
 
@@ -14,19 +15,19 @@
 		?>
 
 		<div class="foto newlist">
-			<a href="<?php echo $imgsrclarge[0];?>" rel="lightbox[<?php echo $expo->post_name;?>]" title="<?php echo $expo->post_title;?>">
+			<a href="<?php echo get_permalink($expo->ID);?>" rel="lightbox[<?php echo $expo->post_name;?>]" title="<?php echo $expo->post_title;?>">
 			
 				<div class="imgwrap">
 					<img src="<?php echo $imgsrcmed[0];?>" alt="<?php echo $expo->post_title;?>"/>
 				</div>
 				
-				<span class="nombre1"></span>
 				
-				<span class="exptit"><?php echo $expo->post_title;?></span>
+				
+				<h1 class="exptit"><?php echo $expo->post_title;?></h1>
 			
 			</a>
 			
-			<a class="" href="<?php echo get_permalink($expo->ID);?>">-Comunicado de Prensa</a>
+			<a class="linkprensa" href="<?php echo get_permalink($expo->ID);?>">-Comunicado de Prensa</a>
 		</div>
 
 		<?php
@@ -62,3 +63,4 @@
 		}
 	}
 ?>
+</div>

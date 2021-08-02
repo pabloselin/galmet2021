@@ -21,3 +21,10 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+article.type-page,
+article.type-post,
+article.type-expos {
+	max-width: 900px;
+	margin: 0 auto;
+}

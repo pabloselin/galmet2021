@@ -21,7 +21,7 @@ get_header();
 			 <?php 
 			  //la última exposición
 			  $args= array(
-			      'post_type'=> 'post',
+			      'post_type'=> 'expos',
 			      'numberposts'=> 1,
 			      'post_status'=> 'publish'
 			        );
@@ -41,14 +41,42 @@ get_header();
           </div>
 
           <div class="anuncios">
-          	
+          	<?php dynamic_sidebar( 'anuncios' );?>
           </div>
 
-          <div class="libros">
-          	
+          <div class="libros-galmet">
+          	<?php 
+          		$args = array(
+          			'post_type' 	=> 'page',
+          			'post_parent' 	=> 275,
+          			'numberposts'	=> -1,
+          			'orderby'		=> 'menu_order',
+          			'order'			=> 'ASC'
+          		);
+          		$libros = get_posts($args);
+
+          		foreach($libros as $libro) {
+          			$link = get_post_meta( $libro->ID, 'link_libro', true);
+          			?>
+
+          				<div class="libro-item">
+          					<?php if($link):?>
+          						<a href="<?php echo $link;?>">
+          						<?php echo get_the_post_thumbnail( $libro->ID, 'full' );?>			
+          						</a>
+          					<?php else:?>
+          						<?php echo get_the_post_thumbnail( $libro->ID, 'full' );?>			
+          					<?php endif;?>
+          				</div>
+
+          			<?php
+          		}
+          	?>
           </div>
 
-          
+          <div class="auspicios">
+          	<?php dynamic_sidebar('auspicios');?>
+          </div>
 
 	</main><!-- #main -->
 

@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '1.0.1' );
 }
 
 if ( ! function_exists( 'galmet_setup' ) ) :
@@ -82,6 +82,56 @@ if ( ! function_exists( 'galmet_setup' ) ) :
 				)
 			)
 		);
+
+		register_sidebar(
+				array(
+						'name' 			=> 'Datos header',
+						'id'			=> 'datos-header',
+						'description'	=> 'Datos cabecera',
+						'before_widget'	=> '<div class="header-widget">',
+						'after_widget'	=> '</div>' 
+					),
+			);
+
+		register_sidebar(
+				array(
+						'name' 			=> 'Anuncios',
+						'id'			=> 'anuncios',
+						'description'	=> 'Banners y anuncios varios',
+						'before_widget'	=> '<div class="anuncio-widget">',
+						'after_widget'	=> '</div>' 
+					),
+			);
+
+		register_sidebar(
+				array(
+						'name' 			=> 'Auspicios',
+						'id'			=> 'auspicios',
+						'description'	=> 'Logos auspicios',
+						'before_widget'	=> '<div class="auspicio-widget">',
+						'after_widget'	=> '</div>' 
+					),
+			);
+
+		register_sidebar(
+				array(
+						'name' 			=> 'Otros',
+						'id'			=> 'otros',
+						'description'	=> 'Otras imágenes',
+						'before_widget'	=> '<div class="otros-widget">',
+						'after_widget'	=> '</div>' 
+					),
+			);
+
+		register_sidebar(
+				array(
+						'name' 			=> 'Footer',
+						'id'			=> 'footer',
+						'description'	=> 'Contenidos footer',
+						'before_widget'	=> '<div class="footer-widget">',
+						'after_widget'	=> '</div>' 
+					),
+			);
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );

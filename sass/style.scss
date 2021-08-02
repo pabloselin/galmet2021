@@ -103,3 +103,97 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Alignments
 --------------------------------------------- */
 @import "utilities/alignments";
+
+
+.expolist {
+	display: flex;
+	flex-wrap: wrap;
+
+	.foto.newlist {
+		width: 33%;
+		padding: 12px;
+		.imgwrap {
+			height: 120px;
+			overflow: hidden;
+		}
+		a {
+			color: #333;
+			&:hover, &:hover h1 {
+				
+			}
+		}
+		h1 {
+			font-size: 16px;
+			line-height: 1.3em;
+			padding: 0 4px;
+			font-weight: bold;
+		}
+	}
+}
+
+.libros-galmet {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.libro-item {
+		margin: 12px;
+
+		img {
+			max-width: 200px;
+		}
+
+		a:hover {
+			img {
+				box-shadow: 0 0 5px #333;
+			}
+		}
+	}
+}
+
+.anuncios {
+	display: flex;
+	align-items: top;
+	justify-content: center;
+	
+	div.anuncio-widget {
+		margin: 12px;
+		max-width: 200px;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		line-height: 1.2em;
+		text-align: center;
+	}
+	
+	a {
+		color: #333;
+		&:hover {
+			img 
+			{
+				box-shadow: 0 0 5px #333;
+			}
+		}
+	}
+}
+
+.auspicios {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	div.auspicio-widget {
+		margin: 12px;
+		max-width: 140px;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.site-footer {
+	margin-top: 12px;
+	border-top: 1px solid #ccc;
+	padding-top: 12px;
+}
