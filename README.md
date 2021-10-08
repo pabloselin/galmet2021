@@ -1,18 +1,19 @@
 # Galería Metropolitana 2021
 
--   Basado en \_s
+-   Tema WordPress Basado en \_s
 -   Gulp, Sass, ES6
 
-# Desarrollo
+## Desarrollo
 
-npm install
-npm run dev
+`npm install`
 
-# Compilación
+`npm run dev`
 
-npm run build
+## Compilación
 
-# Plugins requeridos
+`npm run build`
+
+## Plugins requeridos
 
 -   Advanced Custom Fields
 -   Custom Post Type UI
