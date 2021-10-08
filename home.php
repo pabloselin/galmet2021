@@ -40,10 +40,6 @@ get_header();
 	          <a class="linkprensa" href="<?php echo get_permalink($expos[0]->ID);?>">Comunicado de prensa</a>
           </div>
 
-          <div class="anuncios">
-          	<?php dynamic_sidebar( 'anuncios' );?>
-          </div>
-
           <div class="libros-galmet">
           	<?php 
           		$args = array(
@@ -72,6 +68,10 @@ get_header();
           			<?php
           		}
           	?>
+          </div>
+
+          <div class="anuncios">
+          	<?php dynamic_sidebar( 'anuncios' );?>
           </div>
 
           <div class="auspicios">

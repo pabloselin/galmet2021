@@ -29,7 +29,7 @@
 		<div class="site-branding">
 		
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php dynamic_sidebar('datos-header');?>
+				<?php //dynamic_sidebar('datos-header');?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
