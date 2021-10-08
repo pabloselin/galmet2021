@@ -74,6 +74,32 @@ get_header();
           	<?php dynamic_sidebar( 'anuncios' );?>
           </div>
 
+
+          <h3 class="links-title">Links</h3>
+          <div class="links">
+          	<?php 
+          		$args = array(
+          			'post_type' 	=> 'links',
+          			'numberposts' 	=> -1,
+          			'orderby'		=> 'name',
+          		);
+
+          		$links = get_posts($args);
+
+          		foreach($links as $link) {
+          			?>
+
+          				<a href="<?php echo get_post_meta($link->ID, 'url', true);?>"><?php echo $link->post_title;?></a>
+
+          			<?php
+          		}
+          	?>
+          </div>
+
+          <div class="residencia">
+          	<?php dynamic_sidebar('residencia');?>
+          </div>
+
           <div class="auspicios">
           	<?php dynamic_sidebar('auspicios');?>
           </div>

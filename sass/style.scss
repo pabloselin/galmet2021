@@ -104,7 +104,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------- */
 @import "utilities/alignments";
 
-
 .expolist {
 	display: flex;
 	flex-wrap: wrap;
@@ -118,8 +117,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		}
 		a {
 			color: #333;
-			&:hover, &:hover h1 {
-				
+			&:hover,
+			&:hover h1 {
 			}
 		}
 		h1 {
@@ -154,7 +153,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	display: flex;
 	align-items: top;
 	justify-content: center;
-	
+
 	div.anuncio-widget {
 		margin: 12px;
 		max-width: 200px;
@@ -165,12 +164,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		line-height: 1.2em;
 		text-align: center;
 	}
-	
+
 	a {
 		color: #333;
 		&:hover {
-			img 
-			{
+			img {
 				box-shadow: 0 0 5px #333;
 			}
 		}
@@ -196,4 +194,35 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	margin-top: 12px;
 	border-top: 1px solid #ccc;
 	padding-top: 12px;
+}
+
+h3.links-title {
+	text-align: center;
+	margin-bottom: 6px;
+}
+
+.links {
+	padding: 12px;
+	margin-bottom: 36px;
+	border: 1px solid #ccc;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	background-color: darken(#f0f0f0, 10%);
+	a {
+		display: block;
+		width: 230px;
+		color: #333;
+		&:hover {
+			color: #000;
+			text-decoration: underline;
+		}
+	}
+}
+
+.residencia {
+	width: 100%;
+	display: flex;
+	margin: 24px 0;
 }

@@ -125,6 +125,16 @@ if ( ! function_exists( 'galmet_setup' ) ) :
 
 		register_sidebar(
 				array(
+						'name' 			=> 'Residencia',
+						'id'			=> 'residencia',
+						'description'	=> 'Información de la Residencia',
+						'before_widget'	=> '<div class="residencia-widget">',
+						'after_widget'	=> '</div>' 
+					),
+			);
+
+		register_sidebar(
+				array(
 						'name' 			=> 'Footer',
 						'id'			=> 'footer',
 						'description'	=> 'Contenidos footer',
